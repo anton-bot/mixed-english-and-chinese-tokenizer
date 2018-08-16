@@ -1,0 +1,40 @@
+{
+  "name": "mixed-english-and-chinese-tokenizer",
+  "version": "1.0.0",
+  "description": "Tokenizes utterances that contain a mix of English and Chinese words.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catcher-in-the-try/mixed-english-and-chinese-tokenizer.git"
+  },
+  "keywords": [
+    "tokenizer",
+    "chinese",
+    "english",
+    "language",
+    "tokenize",
+    "nltk",
+    "nlp",
+    "natural-language-processing",
+    "chinese-tokenizer",
+    "contains-chinese"
+  ],
+  "author": "Anton Ivanov <anton@ivanov.hk>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/catcher-in-the-try/mixed-english-and-chinese-tokenizer/issues"
+  },
+  "homepage": "https://github.com/catcher-in-the-try/mixed-english-and-chinese-tokenizer#readme",
+  "dependencies": {
+    "chinese-tokenizer": "^2.0.0",
+    "contains-chinese": "^1.0.0",
+    "expand-contractions": "^1.0.1",
+    "lemmer": "^0.3.0"
+  },
+  "devDependencies": {
+    "should": "^13.2.3"
+  }
+}
