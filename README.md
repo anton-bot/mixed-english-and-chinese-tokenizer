@@ -1,7 +1,8 @@
-﻿# mixed-english-and-chinese-tokenizer
+﻿# Mixed English and Chinese Tokenizer #
+
 Tokenizes sentences containing a mix of Chinese and English words.
 
-Optionally, lemmatizes English words. English contractions such as "don't'" are
+Optionally, lemmatizes English words. English contractions such as "don't" are
 always changed to full forms such as "do not".
 
 Supports Cantonese / Taiwanese / Mandarin. Defaults to producing output in
@@ -12,7 +13,7 @@ Traditional Chinese (see `options` below).
 In order for this to work, you need the CEDICT dictionary. [Search for "cedict_ts.u8"](https://duckduckgo.com/?q="cedict_ts.u8"),
 download the file and place it into `node_modules/mixed-english-and-chinese-tokenizer/`
 
-## Example 
+## Example ##
 
 ```js
 const MEACT = require('mixed-english-and-chinese-tokenizer');
@@ -21,11 +22,11 @@ let m = new MEACT();
 
 (async() => {
 	console.log(
-		// Produces ['hello', 'what', 'is', 'up', '边度', '有', '柜员机', '呀']:
-		await m.tokenize(hello, what's up, 邊度有櫃員機呀?),
+		/* Produces ['hello', 'what', 'is', 'up', '边度', '有', '柜员机', '呀']: */
+		await m.tokenize(`hello, what's up, 邊度有櫃員機呀?`),
 
-		// Produces ['hello', 'what', 'be', 'up', '边度', '有', '柜员机', '呀']:
-		await m.tokenize(hello, what's up, 邊度有櫃員機呀?),
+		/* Produces ['hello', 'what', 'be', 'up', '边度', '有', '柜员机', '呀']: */
+		await m.tokenize(`hello, what's up, 邊度有櫃員機呀?`),
 	);
 
 	m = null; // free up memory occupied by CEDICT
