@@ -12,7 +12,7 @@ Traditional Chinese (see `options` below).
 ## Important ##
 
 In order for this to work, you need the CEDICT dictionary. [Search for "cedict_ts.u8"](https://duckduckgo.com/?q="cedict_ts.u8"),
-download the file and place it into `node_modules/mixed-english-and-chinese-tokenizer/`
+download the file and place it into the root folder of your Node.js application.
 
 ## Example ##
 

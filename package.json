@@ -1,6 +1,6 @@
 {
   "name": "mixed-english-and-chinese-tokenizer",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Tokenizes utterances that contain a mix of English and Chinese words.",
   "main": "index.js",
   "scripts": {
